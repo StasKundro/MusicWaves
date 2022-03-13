@@ -14,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.musicwaves.R
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -61,6 +62,7 @@ class TracksFragment : Fragment() {
         buttonBack.setOnClickListener {
             findNavController().navigate(R.id.tagsFragment)
         }
+
         buttonFind.setOnClickListener {
             if(albumName != null) {
                 val browserIntent = Intent(

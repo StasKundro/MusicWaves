@@ -1,6 +1,6 @@
 package com.example.musicwaves.domain.login
 
-import com.example.musicwaves.data.local.UserDao
+import com.example.musicwaves.storage.local.UserDao
 import com.example.musicwaves.models.local.user.UserEntity
 import javax.inject.Inject
 

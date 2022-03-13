@@ -3,8 +3,8 @@ package com.example.musicwaves.presentation.registration
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.musicwaves.data.extensions.isEmailValid
-import com.example.musicwaves.data.extensions.isPasswordValid
+import com.example.musicwaves.storage.extensions.isEmailValid
+import com.example.musicwaves.storage.extensions.isPasswordValid
 import com.example.musicwaves.domain.registration.RegistrationInteractor
 import com.example.musicwaves.models.local.user.UserEntity
 import dagger.hilt.android.lifecycle.HiltViewModel

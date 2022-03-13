@@ -16,6 +16,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="2dp"
+        android:textColorHint="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/text_view_favourite"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_field"
+            android:textColor="@color/green"
+            android:hint="Track name"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintDimensionRatio="1:1"
+        android:id="@+id/button_search"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.textview.MaterialTextView
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/text_view_favourite"
@@ -36,7 +70,7 @@
         android:layout_height="0dp"
         android:padding="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_view_favourite"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_search"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
