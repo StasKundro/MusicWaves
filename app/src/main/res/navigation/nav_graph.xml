@@ -11,10 +11,18 @@
         android:label="RegistrationFragment" >
         <action
             android:id="@+id/action_registrationFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in" />
         <action
             android:id="@+id/action_registrationFragment_to_tagsFragment"
-            app:destination="@id/tagsFragment" />
+            app:destination="@id/tagsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -27,21 +35,32 @@
         android:label="TagsFragment" >
         <action
             android:id="@+id/action_tagsFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in" />
         <action
             android:id="@+id/action_tagsFragment_to_albumsFragment"
             app:destination="@id/albumsFragment"
-            >
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in">
             <argument
                 android:name="tag"
-                app:argType="string"/>
+                app:argType="string" />
         </action>
         <action
             android:id="@+id/action_tagsFragment_to_tracksFragment"
-            app:destination="@id/tracksFragment" >
+            app:destination="@id/tracksFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in">
             <argument
                 android:name="favourite"
-                app:argType="boolean"/>
+                app:argType="boolean" />
         </action>
     </fragment>
     <fragment
@@ -50,16 +69,24 @@
         android:label="AlbumsFragment" >
         <action
             android:id="@+id/action_albumsFragment_to_tagsFragment"
-            app:destination="@id/tagsFragment" />
+            app:destination="@id/tagsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in" />
         <action
             android:id="@+id/action_albumsFragment_to_tracksFragment"
-            app:destination="@id/tracksFragment" >
+            app:destination="@id/tracksFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in">
             <argument
                 android:name="album"
-                app:argType="string"/>
+                app:argType="string" />
             <argument
                 android:name="artist"
-                app:argType="string"/>
+                app:argType="string" />
         </action>
     </fragment>
     <fragment
@@ -68,9 +95,17 @@
         android:label="TracksFragment" >
         <action
             android:id="@+id/action_tracksFragment_to_albumsFragment"
-            app:destination="@id/albumsFragment" />
+            app:destination="@id/albumsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in" />
         <action
             android:id="@+id/action_tracksFragment_to_tagsFragment"
-            app:destination="@id/tagsFragment" />
+            app:destination="@id/tagsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out_back"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_in" />
     </fragment>
 </navigation>
